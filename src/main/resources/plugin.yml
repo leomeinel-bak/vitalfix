@@ -1,15 +1,15 @@
-name: VitalCraft
+name: VitalFix
 version: @version@
-main: com.tamrielnetwork.vitalcraft.VitalCraft
+main: com.tamrielnetwork.vitalfix.VitalFix
 api-version: 1.17
 authors: [ Tamriel Network ]
 website: https://tamriel.site
-description: Gives players the ability to open a crafting interface.
+description: Gives players the ability to fix their tools & armor.
 commands:
-  vitalcraft:
+  vitalfix:
     description: "Main command"
-    usage: "/vitalcraft"
+    usage: "/vitalfix"
 permissions:
-  vitalcraft.craft:
-    description: "Permission to toggle crafting interface"
+  vitalfix.fix:
+    description: "Permission to fix tools & armor"
     default: op

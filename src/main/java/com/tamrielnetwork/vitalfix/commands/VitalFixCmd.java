@@ -16,35 +16,39 @@
  * along with this program. If not, see https://github.com/TamrielNetwork/VitalFix/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalcraft.utils.commands;
+package com.tamrielnetwork.vitalfix.commands;
 
-import com.tamrielnetwork.vitalcraft.utils.Chat;
+import com.tamrielnetwork.vitalfix.utils.commands.Cmd;
+import com.tamrielnetwork.vitalfix.utils.commands.CmdSpec;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-public class Cmd {
-	public static boolean isArgsLengthNotEqualTo(@NotNull CommandSender sender, @NotNull String[] args, int length) {
-		if (args.length != length) {
-			Chat.sendMessage(sender, "cmd");
+public class VitalFixCmd implements CommandExecutor {
+
+	@Override
+	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
+
+		if (Cmd.isArgsLengthNotEqualTo(sender, args, 0)) {
 			return true;
 		}
-		return false;
+		doFix(sender);
+		return true;
+
 	}
 
-	public static boolean isNotPermitted(@NotNull CommandSender sender, @NotNull String perm) {
-		if (!sender.hasPermission(perm)) {
-			Chat.sendMessage(sender, "no-perms");
-			return true;
+	private void doFix(@NotNull CommandSender sender) {
+
+		if (CmdSpec.isInvalidCmd(sender, "vitalfix.fix")) {
+			return;
 		}
-		return false;
+
+		Player senderPlayer = (Player) sender;
+
+		CmdSpec.doFix(senderPlayer);
+
 	}
 
-	public static boolean isInvalidSender(@NotNull CommandSender sender) {
-		if (!(sender instanceof Player)) {
-			Chat.sendMessage(sender, "player-only");
-			return true;
-		}
-		return false;
-	}
 }

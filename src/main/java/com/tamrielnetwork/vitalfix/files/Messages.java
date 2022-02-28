@@ -16,9 +16,9 @@
  * along with this program. If not, see https://github.com/TamrielNetwork/VitalFix/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalcraft.files;
+package com.tamrielnetwork.vitalfix.files;
 
-import com.tamrielnetwork.vitalcraft.VitalCraft;
+import com.tamrielnetwork.vitalfix.VitalFix;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -27,23 +27,26 @@ import java.io.File;
 
 public class Messages {
 
-	private final VitalCraft main = JavaPlugin.getPlugin(VitalCraft.class);
+	private final VitalFix main = JavaPlugin.getPlugin(VitalFix.class);
 	private final File messagesFile;
 	private final FileConfiguration messagesConf;
 
 	public Messages() {
+
 		messagesFile = new File(main.getDataFolder(), "messages.yml");
 		saveMessagesFile();
 		messagesConf = YamlConfiguration.loadConfiguration(messagesFile);
 	}
 
 	private void saveMessagesFile() {
+
 		if (!messagesFile.exists()) {
 			main.saveResource("messages.yml", false);
 		}
 	}
 
 	public FileConfiguration getMessagesConf() {
+
 		return messagesConf;
 	}
 
