@@ -6,10 +6,13 @@ authors: [ Tamriel Network ]
 website: https://tamriel.site
 description: Gives players the ability to fix their tools & armor.
 commands:
-  vitalfix:
+  fix:
     description: "Main command"
-    usage: "/vitalfix"
+    usage: "/fix"
 permissions:
   vitalfix.fix:
     description: "Permission to fix tools & armor"
+    default: op
+  vitalfix.cooldown.bypass:
+    description: "Permission to bypass cooldown"
     default: op

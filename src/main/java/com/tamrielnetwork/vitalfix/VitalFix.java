@@ -32,7 +32,7 @@ public final class VitalFix extends JavaPlugin {
 	@Override
 	public void onEnable() {
 
-		Objects.requireNonNull(getCommand("vitalfix")).setExecutor(new VitalFixCmd());
+		Objects.requireNonNull(getCommand("fix")).setExecutor(new VitalFixCmd());
 
 		saveDefaultConfig();
 

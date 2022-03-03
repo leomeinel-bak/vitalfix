@@ -85,7 +85,7 @@ To get the plugin running on your server follow these simple steps.
 
 1. Permission: `vitalfix.fix`
 
-* Command: `/vitalfix`
+* Command: `/fix`
 * Description: Fix tools & armor
 
 ### Configuration - config.yml

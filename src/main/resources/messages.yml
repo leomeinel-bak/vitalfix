@@ -1,4 +1,6 @@
+cmd: "&fUsage: &b/fix"
+no-perms: "&cYou don't have enough permissions!"
 player-only: "&cThis command can only be executed by players!"
-no-perms: "&7You don't have enough permissions!"
-cmd: "cmd"
-repaired: "repaired"
+repaired: "&fYour tools & armor have been repaired"
+cooldown-active: "&cYou can't use that command for another &b%time-left% &cseconds!"
+
