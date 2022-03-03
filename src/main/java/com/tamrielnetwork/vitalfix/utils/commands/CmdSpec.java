@@ -60,8 +60,6 @@ public class CmdSpec {
 				continue;
 			}
 
-			Chat.sendMessage(senderPlayer, "repaired");
-
 			itemDamageable.setDamage(0);
 			itemStack.setItemMeta(itemDamageable);
 		}

@@ -18,6 +18,7 @@
 
 package com.tamrielnetwork.vitalfix.commands;
 
+import com.tamrielnetwork.vitalfix.utils.Chat;
 import com.tamrielnetwork.vitalfix.utils.commands.Cmd;
 import com.tamrielnetwork.vitalfix.utils.commands.CmdSpec;
 import org.bukkit.command.Command;
@@ -48,6 +49,8 @@ public class VitalFixCmd implements CommandExecutor {
 		Player senderPlayer = (Player) sender;
 
 		CmdSpec.doFix(senderPlayer);
+
+		Chat.sendMessage(senderPlayer, "repaired");
 
 	}
 
