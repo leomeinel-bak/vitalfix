@@ -45,7 +45,8 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#commands-and-permissions">Commands and Permissions</a></li>
-        <li><a href="#configuration">Configuration</a></li>
+        <li><a href="#configuration - config.yml">Configuration</a></li>
+		<li><a href="#configuration - messages.yml">Configuration</a></li>
       </ul>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -88,18 +89,28 @@ To get the plugin running on your server follow these simple steps.
 * Command: `/fix`
 * Description: Fix tools & armor
 
+2. Permission: `vitalfix.cooldown.bypass`
+
+* Description: Bypass cooldown
+
 ### Configuration - config.yml
 
 ```
+# Command cool-down
+cooldown:
+  enabled: true
+  # time in s
+  time: 120
 ```
 
 ### Configuration - messages.yml
 
 ```
+cmd: "&fUsage: &b/fix"
+no-perms: "&cYou don't have enough permissions!"
 player-only: "&cThis command can only be executed by players!"
-no-perms: "&7You don't have enough permissions!"
-cmd: "cmd"
-repaired: "repaired"
+repaired: "&fYour tools & armor have been repaired"
+cooldown-active: "&cYou can't use that command for another &b%time-left% &cseconds!"
 ```
 
 <!-- ROADMAP -->
