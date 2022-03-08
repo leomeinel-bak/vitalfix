@@ -18,7 +18,6 @@
 
 package com.tamrielnetwork.vitalfix.utils.commands;
 
-import com.google.common.collect.ImmutableMap;
 import com.tamrielnetwork.vitalfix.VitalFix;
 import com.tamrielnetwork.vitalfix.utils.Chat;
 import org.bukkit.command.CommandSender;
@@ -38,6 +37,10 @@ public class CmdSpec {
 
 	private static final VitalFix main = JavaPlugin.getPlugin(VitalFix.class);
 	private static final HashMap<UUID, Long> cooldownMap = new HashMap<>();
+	private CmdSpec() {
+
+		throw new IllegalStateException("Utility class");
+	}
 
 	public static void doFix(@NotNull Player senderPlayer) {
 
@@ -52,11 +55,7 @@ public class CmdSpec {
 
 			ItemMeta itemMeta = itemStack.getItemMeta();
 
-			if (!(itemMeta instanceof Damageable itemDamageable)) {
-				continue;
-			}
-
-			if (!(itemDamageable.hasDamage())) {
+			if (!(itemMeta instanceof Damageable itemDamageable) || !(itemDamageable.hasDamage())) {
 				continue;
 			}
 
@@ -102,7 +101,7 @@ public class CmdSpec {
 
 		if (isOnCooldown) {
 			String timeRemaining = String.valueOf(cooldownMap.get(senderPlayer.getUniqueId()) - System.currentTimeMillis() / 1000);
-			Chat.sendMessage(sender, ImmutableMap.of("%time-left%", timeRemaining), "cooldown-active");
+			Chat.sendMessage(sender, java.util.Map.of("%time-left%", timeRemaining), "cooldown-active");
 			return true;
 		}
 		cooldownMap.put(senderPlayer.getUniqueId(), main.getConfig().getLong("cooldown.time") + System.currentTimeMillis() / 1000);
