@@ -25,7 +25,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.jetbrains.annotations.NotNull;
@@ -37,6 +36,7 @@ public class CmdSpec {
 
 	private static final VitalFix main = JavaPlugin.getPlugin(VitalFix.class);
 	private static final HashMap<UUID, Long> cooldownMap = new HashMap<>();
+
 	private CmdSpec() {
 
 		throw new IllegalStateException("Utility class");
@@ -49,13 +49,7 @@ public class CmdSpec {
 
 		for (ItemStack itemStack : inventoryItemStacks) {
 
-			if (itemStack == null) {
-				continue;
-			}
-
-			ItemMeta itemMeta = itemStack.getItemMeta();
-
-			if (!(itemMeta instanceof Damageable itemDamageable) || !(itemDamageable.hasDamage())) {
+			if (itemStack == null || !(itemStack.getItemMeta() instanceof Damageable itemDamageable) || !(itemDamageable.hasDamage())) {
 				continue;
 			}
 
