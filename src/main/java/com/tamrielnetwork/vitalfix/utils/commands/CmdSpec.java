@@ -46,7 +46,8 @@ public class CmdSpec {
 		Inventory senderInventory = senderPlayer.getInventory();
 		ItemStack[] inventoryItemStacks = senderInventory.getContents();
 		for (ItemStack itemStack : inventoryItemStacks) {
-			if (itemStack == null || !(itemStack.getItemMeta() instanceof Damageable itemDamageable) || !(itemDamageable.hasDamage())) {
+			if (itemStack == null || !(itemStack.getItemMeta() instanceof Damageable itemDamageable)
+			    || !(itemDamageable.hasDamage())) {
 				continue;
 			}
 			itemDamageable.setDamage(0);
@@ -83,8 +84,8 @@ public class CmdSpec {
 	private static boolean isOnCooldown(@NotNull CommandSender sender) {
 		Player senderPlayer = (Player) sender;
 		boolean isOnCooldown = main.getConfig()
-		                           .getBoolean("cooldown.enabled") && !sender.hasPermission(
-				"vitalfix.cooldown.bypass") && cooldownMap.containsKey(senderPlayer.getUniqueId());
+		                           .getBoolean("cooldown.enabled") && !sender.hasPermission("vitalfix.cooldown.bypass")
+		                       && cooldownMap.containsKey(senderPlayer.getUniqueId());
 		if (isOnCooldown) {
 			String timeRemaining = String.valueOf(
 					cooldownMap.get(senderPlayer.getUniqueId()) - System.currentTimeMillis() / 1000);
