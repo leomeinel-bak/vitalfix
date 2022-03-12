@@ -27,31 +27,25 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-public class VitalFixCmd implements CommandExecutor {
+public class VitalFixCmd
+		implements CommandExecutor {
 
 	@Override
-	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-
+	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label,
+	                         @NotNull String[] args) {
 		if (Cmd.isArgsLengthNotEqualTo(sender, args, 0)) {
 			return false;
 		}
 		doFix(sender);
 		return true;
-
 	}
 
 	private void doFix(@NotNull CommandSender sender) {
-
 		if (CmdSpec.isInvalidCmd(sender, "vitalfix.fix")) {
 			return;
 		}
-
 		Player senderPlayer = (Player) sender;
-
 		CmdSpec.doFix(senderPlayer);
-
 		Chat.sendMessage(senderPlayer, "repaired");
-
 	}
-
 }
