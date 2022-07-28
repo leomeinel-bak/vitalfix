@@ -16,10 +16,10 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalFix/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalfix;
+package dev.meinel.leo.vitalfix;
 
-import com.tamrielnetwork.vitalfix.commands.VitalFixCmd;
-import com.tamrielnetwork.vitalfix.files.Messages;
+import dev.meinel.leo.vitalfix.commands.VitalFixCmd;
+import dev.meinel.leo.vitalfix.files.Messages;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

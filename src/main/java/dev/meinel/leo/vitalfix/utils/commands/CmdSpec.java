@@ -16,10 +16,10 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalFix/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalfix.utils.commands;
+package dev.meinel.leo.vitalfix.utils.commands;
 
-import com.tamrielnetwork.vitalfix.VitalFix;
-import com.tamrielnetwork.vitalfix.utils.Chat;
+import dev.meinel.leo.vitalfix.VitalFix;
+import dev.meinel.leo.vitalfix.utils.Chat;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;

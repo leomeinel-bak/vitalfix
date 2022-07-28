@@ -16,40 +16,36 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalFix/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalfix.utils.commands;
+package dev.meinel.leo.vitalfix.commands;
 
-import com.tamrielnetwork.vitalfix.utils.Chat;
+import dev.meinel.leo.vitalfix.utils.Chat;
+import dev.meinel.leo.vitalfix.utils.commands.Cmd;
+import dev.meinel.leo.vitalfix.utils.commands.CmdSpec;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-public class Cmd {
+public class VitalFixCmd
+		implements CommandExecutor {
 
-	private Cmd() {
-		throw new IllegalStateException("Utility class");
+	@Override
+	public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label,
+	                         @NotNull String[] args) {
+		if (Cmd.isArgsLengthNotEqualTo(sender, args, 0)) {
+			return false;
+		}
+		doFix(sender);
+		return true;
 	}
 
-	public static boolean isArgsLengthNotEqualTo(@NotNull CommandSender sender, @NotNull String[] args, int length) {
-		if (args.length != length) {
-			Chat.sendMessage(sender, "cmd");
-			return true;
+	private void doFix(@NotNull CommandSender sender) {
+		if (CmdSpec.isInvalidCmd(sender, "vitalfix.fix")) {
+			return;
 		}
-		return false;
-	}
-
-	public static boolean isNotPermitted(@NotNull CommandSender sender, @NotNull String perm) {
-		if (!sender.hasPermission(perm)) {
-			Chat.sendMessage(sender, "no-perms");
-			return true;
-		}
-		return false;
-	}
-
-	public static boolean isInvalidSender(@NotNull CommandSender sender) {
-		if (!(sender instanceof Player)) {
-			Chat.sendMessage(sender, "player-only");
-			return true;
-		}
-		return false;
+		Player senderPlayer = (Player) sender;
+		CmdSpec.doFix(senderPlayer);
+		Chat.sendMessage(senderPlayer, "repaired");
 	}
 }

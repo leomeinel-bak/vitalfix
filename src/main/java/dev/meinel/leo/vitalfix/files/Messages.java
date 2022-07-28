@@ -16,9 +16,9 @@
  * along with this program. If not, see https://github.com/LeoMeinel/VitalFix/blob/main/LICENSE
  */
 
-package com.tamrielnetwork.vitalfix.files;
+package dev.meinel.leo.vitalfix.files;
 
-import com.tamrielnetwork.vitalfix.VitalFix;
+import dev.meinel.leo.vitalfix.VitalFix;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;

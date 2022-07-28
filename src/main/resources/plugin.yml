@@ -1,6 +1,6 @@
 name: VitalFix
 version: @version@
-main: com.tamrielnetwork.vitalfix.VitalFix
+main: dev.meinel.leo.vitalfix.VitalFix
 api-version: 1.17
 authors: [ Leopold Meinel ]
 description: Gives players the ability to fix their tools & armor.
