@@ -10,7 +10,7 @@
 <!--suppress ALL -->
 <br />
 <p align="center">
-  <a href="https://github.com/TamrielNetwork/VitalFix">
+  <a href="https://github.com/LeoMeinel/VitalFix">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -19,14 +19,14 @@
   <p align="center">
     Fix tools & armor on Spigot and Paper
     <br />
-    <a href="https://github.com/TamrielNetwork/VitalFix"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LeoMeinel/VitalFix"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/TamrielNetwork/VitalFix">View Demo</a>
+    <a href="https://github.com/LeoMeinel/VitalFix">View Demo</a>
     ·
-    <a href="https://github.com/TamrielNetwork/VitalFix/issues">Report Bug</a>
+    <a href="https://github.com/LeoMeinel/VitalFix/issues">Report Bug</a>
     ·
-    <a href="https://github.com/TamrielNetwork/VitalFix/issues">Request Feature</a>
+    <a href="https://github.com/LeoMeinel/VitalFix/issues">Request Feature</a>
   </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -117,7 +117,7 @@ cooldown-active: "&cYou can't use that command for another &b%time-left% &csecon
 
 ## Roadmap
 
-See the [open issues](https://github.com/TamrielNetwork/VitalFix/issues) for a list of proposed features (and known
+See the [open issues](https://github.com/LeoMeinel/VitalFix/issues) for a list of proposed features (and known
 issues).
 
 <!-- CONTRIBUTING -->
@@ -147,7 +147,7 @@ Leopold Meinel - [@TamrielN](https://twitter.com/TamrielN) - Twitter
 
 Leopold Meinel - [contact@tamriel.me](mailto:contact@tamriel.me) - eMail
 
-Project Link - [VitalFix](https://github.com/TamrielNetwork/VitalFix) - GitHub
+Project Link - [VitalFix](https://github.com/LeoMeinel/VitalFix) - GitHub
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -157,26 +157,26 @@ Project Link - [VitalFix](https://github.com/TamrielNetwork/VitalFix) - GitHub
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors-anon/TamrielNetwork/VitalFix?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/VitalFix?style=for-the-badge
 
-[contributors-url]: https://github.com/TamrielNetwork/VitalFix/graphs/contributors
+[contributors-url]: https://github.com/LeoMeinel/VitalFix/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/TamrielNetwork/VitalFix?label=Forks&style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/VitalFix?label=Forks&style=for-the-badge
 
-[forks-url]: https://github.com/TamrielNetwork/VitalFix/network/members
+[forks-url]: https://github.com/LeoMeinel/VitalFix/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/TamrielNetwork/VitalFix?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/VitalFix?style=for-the-badge
 
-[stars-url]: https://github.com/TamrielNetwork/VitalFix/stargazers
+[stars-url]: https://github.com/LeoMeinel/VitalFix/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/TamrielNetwork/VitalFix?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/VitalFix?style=for-the-badge
 
-[issues-url]: https://github.com/TamrielNetwork/VitalFix/issues
+[issues-url]: https://github.com/LeoMeinel/VitalFix/issues
 
-[license-shield]: https://img.shields.io/github/license/TamrielNetwork/VitalFix?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/LeoMeinel/VitalFix?style=for-the-badge
 
-[license-url]: https://github.com/TamrielNetwork/VitalFix/blob/main/LICENSE
+[license-url]: https://github.com/LeoMeinel/VitalFix/blob/main/LICENSE
 
-[quality-shield]: https://img.shields.io/codefactor/grade/github/TamrielNetwork/VitalFix?style=for-the-badge
+[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/VitalFix?style=for-the-badge
 
-[quality-url]: https://www.codefactor.io/repository/github/TamrielNetwork/VitalFix
+[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/VitalFix
