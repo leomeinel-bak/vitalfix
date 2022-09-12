@@ -1,4 +1,5 @@
 <!-- PROJECT SHIELDS -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -69,12 +70,12 @@ This plugin is perfect for any server wanting their players to be able to fix th
 
 ### Features
 
-* Fix all tools & armor
+- Fix all tools & armor
 
 ### Built With
 
-* [Gradle 7](https://docs.gradle.org/7.4/release-notes.html)
-* [OpenJDK 17](https://openjdk.java.net/projects/jdk/17/)
+- [Gradle 7](https://docs.gradle.org/7.4/release-notes.html)
+- [OpenJDK 17](https://openjdk.java.net/projects/jdk/17/)
 
 <!-- GETTING STARTED -->
 
@@ -86,12 +87,12 @@ To get the plugin running on your server follow these simple steps.
 
 1. Permission: `vitalfix.fix`
 
-* Command: `/fix`
-* Description: Fix tools & armor
+- Command: `/fix`
+- Description: Fix tools & armor
 
 2. Permission: `vitalfix.cooldown.bypass`
 
-* Description: Bypass cooldown
+- Description: Bypass cooldown
 
 ### Configuration - config.yml
 
@@ -151,30 +152,19 @@ Project Link - [VitalFix](https://github.com/LeoMeinel/VitalFix) - GitHub
 
 ### Acknowledgements
 
-* [README.md - othneildrew](https://github.com/othneildrew/Best-README-Template)
+- [README.md - othneildrew](https://github.com/othneildrew/Best-README-Template)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/VitalFix?style=for-the-badge
-
 [contributors-url]: https://github.com/LeoMeinel/VitalFix/graphs/contributors
-
 [forks-shield]: https://img.shields.io/github/forks/LeoMeinel/VitalFix?label=Forks&style=for-the-badge
-
 [forks-url]: https://github.com/LeoMeinel/VitalFix/network/members
-
 [stars-shield]: https://img.shields.io/github/stars/LeoMeinel/VitalFix?style=for-the-badge
-
 [stars-url]: https://github.com/LeoMeinel/VitalFix/stargazers
-
 [issues-shield]: https://img.shields.io/github/issues/LeoMeinel/VitalFix?style=for-the-badge
-
 [issues-url]: https://github.com/LeoMeinel/VitalFix/issues
-
 [license-shield]: https://img.shields.io/github/license/LeoMeinel/VitalFix?style=for-the-badge
-
 [license-url]: https://github.com/LeoMeinel/VitalFix/blob/main/LICENSE
-
 [quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/VitalFix?style=for-the-badge
-
 [quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/VitalFix
