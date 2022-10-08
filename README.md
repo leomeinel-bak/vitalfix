@@ -11,7 +11,7 @@
 <!--suppress ALL -->
 <br />
 <p align="center">
-  <a href="https://github.com/LeoMeinel/VitalFix">
+  <a href="https://github.com/LeoMeinel/vitalfix">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -20,14 +20,14 @@
   <p align="center">
     Fix tools & armor on Spigot and Paper
     <br />
-    <a href="https://github.com/LeoMeinel/VitalFix"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LeoMeinel/vitalfix"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/LeoMeinel/VitalFix">View Demo</a>
+    <a href="https://github.com/LeoMeinel/vitalfix">View Demo</a>
     ·
-    <a href="https://github.com/LeoMeinel/VitalFix/issues">Report Bug</a>
+    <a href="https://github.com/LeoMeinel/vitalfix/issues">Report Bug</a>
     ·
-    <a href="https://github.com/LeoMeinel/VitalFix/issues">Request Feature</a>
+    <a href="https://github.com/LeoMeinel/vitalfix/issues">Request Feature</a>
   </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -90,7 +90,7 @@ cooldown-active: "&cYou can't use that command for another &b%time-left% &csecon
 
 ## Roadmap
 
-See the [open issues](https://github.com/LeoMeinel/VitalFix/issues) for a list of proposed features (and known
+See the [open issues](https://github.com/LeoMeinel/vitalfix/issues) for a list of proposed features (and known
 issues).
 
 <!-- CONTRIBUTING -->
@@ -118,7 +118,7 @@ Distributed under the GNU General Public License v3.0. See `LICENSE` for more in
 
 Leopold Meinel - [leo@meinel.dev](mailto:leo@meinel.dev) - eMail
 
-Project Link - [VitalFix](https://github.com/LeoMeinel/VitalFix) - GitHub
+Project Link - [VitalFix](https://github.com/LeoMeinel/vitalfix) - GitHub
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -128,15 +128,15 @@ Project Link - [VitalFix](https://github.com/LeoMeinel/VitalFix) - GitHub
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/VitalFix?style=for-the-badge
-[contributors-url]: https://github.com/LeoMeinel/VitalFix/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/VitalFix?label=Forks&style=for-the-badge
-[forks-url]: https://github.com/LeoMeinel/VitalFix/network/members
-[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/VitalFix?style=for-the-badge
-[stars-url]: https://github.com/LeoMeinel/VitalFix/stargazers
-[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/VitalFix?style=for-the-badge
-[issues-url]: https://github.com/LeoMeinel/VitalFix/issues
-[license-shield]: https://img.shields.io/github/license/LeoMeinel/VitalFix?style=for-the-badge
-[license-url]: https://github.com/LeoMeinel/VitalFix/blob/main/LICENSE
-[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/VitalFix?style=for-the-badge
-[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/VitalFix
+[contributors-shield]: https://img.shields.io/github/contributors-anon/LeoMeinel/vitalfix?style=for-the-badge
+[contributors-url]: https://github.com/LeoMeinel/vitalfix/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/LeoMeinel/vitalfix?label=Forks&style=for-the-badge
+[forks-url]: https://github.com/LeoMeinel/vitalfix/network/members
+[stars-shield]: https://img.shields.io/github/stars/LeoMeinel/vitalfix?style=for-the-badge
+[stars-url]: https://github.com/LeoMeinel/vitalfix/stargazers
+[issues-shield]: https://img.shields.io/github/issues/LeoMeinel/vitalfix?style=for-the-badge
+[issues-url]: https://github.com/LeoMeinel/vitalfix/issues
+[license-shield]: https://img.shields.io/github/license/LeoMeinel/vitalfix?style=for-the-badge
+[license-url]: https://github.com/LeoMeinel/vitalfix/blob/main/LICENSE
+[quality-shield]: https://img.shields.io/codefactor/grade/github/LeoMeinel/vitalfix?style=for-the-badge
+[quality-url]: https://www.codefactor.io/repository/github/LeoMeinel/vitalfix
