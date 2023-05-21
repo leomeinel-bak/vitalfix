@@ -79,7 +79,6 @@ cooldown:
 ### Configuration - messages.yml
 
 ```yaml
-cmd: "&fUsage: &b/fix"
 no-perms: "&cYou don't have enough permissions!"
 player-only: "&cThis command can only be executed by players!"
 repaired: "&fYour tools & armor have been repaired"
